@@ -1,0 +1,416 @@
+$color_1: #051011;
+$color_2: green;
+$color_3: red;
+$color_4: black;
+$color_5: #8f8f8f;
+$font_family_1: 'BioRhyme', serif;
+$font_family_2: monospace;
+$background_color_1: rgba(224, 172, 155, 0.25);
+$background_color_2: transparent;
+
+html {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: $background_color_1;
+
+		div.webpack-test {
+			color: red;
+			font-size: 4rem;
+			font-weight: bold;
+		}
+
+		div.navbar {
+			order: 1;
+			display: flex;
+			justify-content: space-around;
+			width: 700px;
+			margin: 10px 0 15px;
+			img {
+				width: 140px;
+			}
+		}
+		img.logo {
+			order: 0;
+			margin: 45px auto 15px;
+		}
+		div.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		div.tv-wrapper {
+			order: 2;
+			justify-content: center;
+		}
+		div.contact {
+			order: 2;
+			display: none;
+			max-width: 700px;
+			img.line {
+				width: 90%;
+				padding: 0;
+				margin: 33px 0;
+			}
+			img.banner {
+				height: 33px;
+			}
+			p {
+				margin: 28px 0;
+				font-size: 1.6em;
+				font-family: $font_family_1;
+				font-weight: 500;
+				a {
+					text-decoration: none;
+				}
+			}
+			form.contact-form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin: 10px;
+				div {
+					display: flex;
+					justify-content: center;
+					width: 440px;
+					padding: 13px 0;
+					font-family: $font_family_1;
+					label {
+						width: 20%;
+						letter-spacing: 1px;
+					}
+					input {
+						width: 76%;
+						float: right;
+						border: none;
+						border-bottom: 1.4px solid #1f696b;
+						background-color: $background_color_2;
+						color: $color_1;
+						font-size: 1.1em;
+						font-family: $font_family_2;
+						letter-spacing: 1.4px;
+					}
+					textarea {
+						width: 76%;
+						float: right;
+						padding: 3px 0 0 6px;
+						border: 1.4px solid #1f696b;
+						background-color: $background_color_2;
+						font-size: 1.1em;
+						letter-spacing: 1.4px;
+					}
+					button {
+						align-self: center;
+						width: 72%;
+						height: 70px;
+						margin: 10px 0;
+						display: block;
+						background: rgba(98, 205, 209, 0.5);
+						border: 1px solid #1f696b;
+						font-size: 2em;
+						font-family: $font_family_1;
+						font-weight: 600;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+						&:hover {
+							width: 76%;
+							background: rgba(98, 205, 209, 0.9);
+							border-bottom: 5px solid #1a5558;
+							transition: width 0.35s;
+						}
+						&:active {
+							width: 100%;
+							border-bottom: 2px solid #103738;
+						}
+					}
+					i.success {
+						color: $color_2;
+						display: none;
+					}
+					i.failure {
+						color: $color_3;
+						display: none;
+					}
+				}
+			}
+			div.submit {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				h3 {
+					display: none;
+					font-size: 1.4em;
+					margin: 14px 0;
+					padding: 0;
+					text-align: center;
+				}
+				p {
+					display: none;
+					font-size: 1.1em;
+					margin: 14px 0;
+					padding: 0;
+					text-align: center;
+				}
+			}
+			img.shoot-out {
+				width: 385px;
+			}
+		}
+		div.shows {
+			order: 2;
+			display: none;
+			max-width: 700px;
+			img.line {
+				width: 90%;
+				margin: 28px 0;
+			}
+			img.banner {
+				height: 39px;
+				margin-bottom: 1.8rem;
+			}
+			section {
+				display: flex;
+				flex-direction: column;
+				padding-bottom: 1.4rem;
+				margin-bottom: 1.4rem;
+				border-bottom: 1px solid darkgray;
+				h2 {
+					font-family: $font_family_1;
+					font-size: 2rem;
+					a {
+						text-decoration: none;
+						color: $color_4;
+						&:hover {
+							color: $color_5;
+						}
+					}
+				}
+				p {
+					text-align: center;
+					padding: 0;
+					margin: 0.5rem;
+					font-family: $font_family_1;
+					font-size: 1rem;
+					font-weight: 400;
+					line-height: 1.8em;
+					strong {
+						font-size: 1.5rem;
+					}
+					a {
+						color: $color_4;
+						font-size: 1.1rem;
+						font-weight: 400;
+						font-family: $font_family_1;
+						text-decoration: none;
+						letter-spacing: 1px;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			img.dino-mac {
+				width: 375px;
+				margin: 24px 0;
+			}
+		}
+		div.shop {
+			order: 2;
+			display: none;
+			flex-direction: column;
+			max-width: 700px;
+			img.line {
+				order: 0;
+				width: 90%;
+				margin: 28px 0;
+			}
+			img.banner {
+				order: 1;
+				width: 96px;
+				padding: 0;
+			}
+			div#animation {
+				order: 2;
+				display: flex;
+				justify-content: center;
+				max-width: 400px;
+				height: 320px;
+				margin: 14px 0 0;
+				img {
+					display: none;
+					bottom: 0;
+					&:first-child {
+						display: block;
+					}
+				}
+				img.lizard {
+					width: 100%;
+					bottom: 0;
+				}
+			}
+			img.notice {
+				order: 3;
+				width: 400px;
+			}
+			img.bottom {
+				order: 4;
+			}
+		}
+		div.footer-wrapper {
+			order: 3;
+			img.footer {
+				width: 270px;
+				margin-bottom: 50px;
+			}
+			img.knob {
+				width: 54px;
+				position: relative;
+				top: -348px;
+				right: -92px;
+				float: right;
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 14px;
+		body {
+			width: 100%;
+			height: auto;
+			div.navbar {
+				max-width: 100%;
+				margin: 6px 0 0;
+				a {
+					img {
+						width: 84px;
+					}
+				}
+			}
+			img.logo {
+				width: 210px;
+				margin: 26px auto 19px;
+			}
+			div.tv-wrapper {
+				width: 100%;
+				img {
+					width: 96%;
+				}
+			}
+			div.contact {
+				max-width: 100%;
+				img.banner {
+					width: 137px;
+				}
+				p {
+					font-size: 1.2em;
+				}
+				form.contact-form {
+					width: 100%;
+					div {
+						width: 90%;
+						label {
+							width: 30%;
+							float: left;
+						}
+						input {
+							width: 70%;
+							float: right;
+						}
+						textarea {
+							width: 70%;
+							float: right;
+						}
+						button {
+							width: 70%;
+							font-size: 1.3em;
+						}
+					}
+				}
+				img.shoot-out {
+					width: 80%;
+				}
+			}
+			div.shows {
+				width: 100%;
+				img.banner {
+					width: 104px;
+				}
+				p {
+					padding: 0 20px;
+					font-size: 1.2em;
+				}
+				img.dino-mac {
+					width: 70%;
+				}
+			}
+			div.shop {
+				width: 100%;
+				img.banner {
+					width: 76px;
+				}
+				div#animation {
+					height: 210px;
+					img.lizard {
+						height: 85%;
+						width: auto;
+					}
+				}
+				img.notice {
+					width: 80%;
+				}
+			}
+			div.footer-wrapper {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				a {
+					img.footer {
+						width: 205px;
+						margin: 20px auto 20px;
+					}
+				}
+				img.knob {
+					display: none;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 720px) {
+	html {
+		body {
+			width: 100%;
+			div.contact {
+				form.contact-form {
+					div.submit {
+						margin: 0;
+						button {
+							margin: 0;
+						}
+					}
+				}
+			}
+			div.shop {
+				width: 100%;
+			}
+			div.footer-wrapper {
+				img.knob {
+					width: 51px;
+					top: -326px;
+					right: -76px;
+				}
+			}
+		}
+	}
+}
