@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
+import About from './components/pages/About';
 import Footer from './components/layout/Footer';
 import TVSet from './components/layout/TVSet';
 import logo from './logo.svg';
@@ -11,9 +12,16 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header />
-          <TVSet />
-          <Footer />
+          <div className="container">
+            <Header />
+            <Route exact path='/' render= { props => (
+              <React.Fragment>
+                <TVSet />
+              </React.Fragment>
+            )} />
+            <Route path='/about' component={ About } />
+            <Footer />
+          </div>
         </div>
       </Router>
     );
