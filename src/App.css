@@ -1,6 +1,11 @@
+html {
+  background-color: rgba(224, 172, 155, 0.25);
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
-  background-color: rgba(224, 172, 155, 0.25);
 }
 
 .App-logo {
