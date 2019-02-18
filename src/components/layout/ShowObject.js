@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function ShowObject() {
-    return (
-        <React.Fragment>
-            <h3>Festival of Books</h3>
-            <p>
-                March 9th, or something
-            </p>
-        </React.Fragment>
-    )
+class ShowObject extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <div className='ShowObject'>
+                <h3>Festival of Books</h3>
+                <p>
+                    March 9th, or something
+                </p>
+            </div>
+        );
+    }
 }
+ 
+export default ShowObject;

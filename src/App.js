@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './components/layout/Header';
+
+// Pages & layouts
 import Shop from './components/pages/Shop';
 import Shows from './components/pages/Shows';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
+import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import TVSet from './components/layout/TVSet';
+
+// Data for MicTV shows, as JSON.
+import ShowData from './data/shows.json'
 import './App.css';
 
 class App extends Component {
+  state = {
+    shows: ShowData.slice()
+  }
+
   render() {
     return (
       <Router>
@@ -18,7 +27,10 @@ class App extends Component {
             <Header />
             <Switch>
               <Route path='/shop' component={ Shop } />
-              <Route path='/shows' component={ Shows } />
+              <Route
+                path='/shows'
+                render={ () => <Shows shows={ ShowData } /> }
+              />
               <Route path='/contact' component={ Contact } />
               <Route path='/about' component={ About } />
               <Route path='/' component={ TVSet } />
