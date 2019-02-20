@@ -10,16 +10,12 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import TVSet from './components/layout/TVSet';
 
-// Data for MicTV shows, as JSON.
-import ShowData from './data/shows.json'
 import './App.css';
 
 class App extends Component {
-  state = {
-    shows: ShowData.slice()
-  }
 
   render() {
+    // console.log(this.state.shows);
     return (
       <Router>
         <div className="App">
@@ -29,7 +25,7 @@ class App extends Component {
               <Route path='/shop' component={ Shop } />
               <Route
                 path='/shows'
-                render={ () => <Shows shows={ ShowData } /> }
+                render={ () => <Shows /> }
               />
               <Route path='/contact' component={ Contact } />
               <Route path='/about' component={ About } />

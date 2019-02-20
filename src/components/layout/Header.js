@@ -14,12 +14,12 @@ class Header extends Component {
 
     render() { 
         return (
-            <div className='Header' style={ headerStyle }>
-                <Link exact='true' to='/'><img style={ logoStyle } src={ Logo } alt="MicTV Logo" /></Link>
-                <nav className='NavLinks' style={ navbarStyle }>
-                    <Link to='/shop'><img id='shopLink' style={ linkStyle } src={ ShopLink } alt='shop - navigation link'></img></Link>
-                    <Link to='/shows'><img id='showsLink' style={ linkStyle } src={ ShowsLink } alt='shows - navigation link'></img></Link>
-                    <Link to='/contact'><img id='contactLink' style={ linkStyle } src={ ContactLink } alt='contact - navigation link'></img></Link>
+            <div className='Header col-sm-10 col-md-8 col-lg-6' >
+                <Link exact='true' to='/'><img src={ Logo } className='logoStyle' alt="MicTV Logo" /></Link>
+                <nav className='navbarStyle'>
+                    <Link to='/shop'><img id='shopLink' src={ ShopLink } className='linkStyle' alt='shop - navigation link'></img></Link>
+                    <Link to='/shows'><img id='showsLink' src={ ShowsLink } className='linkStyle' alt='shows - navigation link'></img></Link>
+                    <Link to='/contact'><img id='contactLink' src={ ContactLink } className='linkStyle' alt='contact - navigation link'></img></Link>
                 </nav>
             </div>
         )
@@ -28,21 +28,3 @@ class Header extends Component {
  
 export default Header;
 
-const navbarStyle = {
-    margin: '0 auto',
-    display: 'flex',
-    justifyContent: 'center'
-}
-
-const linkStyle = {
-    margin: '0 50px'
-}
-
-const headerStyle = {
-    width: '100%',
-    margin: '0 auto'
-  }
-
-const logoStyle = {
-    margin: '60px auto 30px'
-}

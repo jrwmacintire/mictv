@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
 class ShowObject extends Component {
-    state = {  }
     render() { 
+        const { showName, date, location, time, price } = this.props.show;
         return ( 
-            <div className='ShowObject'>
-                <h3>Festival of Books</h3>
-                <p>
-                    March 9th, or something
-                </p>
+            <div className='ShowObject' >
+                <h3>{ showName }</h3>
+                <h5>{ location }</h5>
+                <p>{ date }</p>
+                <p>{ time }</p>
+                <p>{ price }</p>
             </div>
         );
     }

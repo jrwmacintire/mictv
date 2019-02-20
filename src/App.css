@@ -5,6 +5,7 @@ html {
 }
 
 .App {
+  background-color: rgba(224, 172, 155, 0.25);
   text-align: center;
 }
 
@@ -27,6 +28,75 @@ html {
 .App-link {
   color: #61dafb;
 }
+
+.navbarStyle {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.linkStyle {
+  padding: 0 1.2rem;
+  margin: auto;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.logoStyle {
+  margin: 60px auto 30px;
+}
+
+.TVSet {
+  margin: auto;
+}
+
+.TVSet > img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.lineStyle {
+  width: 60%;
+  margin: 32px auto 32px;
+}
+
+.submitButton {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.ShowObject {
+  margin: 2rem auto;
+}
+
+.ShowObject > h3 {
+  margin-bottom: 1rem;
+}
+
+.ShowObject > p {
+  margin: 0.35rem 0;
+}
+
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+.Contact > img#ContactHeader {
+  margin: 0 auto;
+}
+
+.Footer {
+  margin: 3.4rem auto 3rem;
+}
+
 
 @keyframes App-logo-spin {
   from {

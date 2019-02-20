@@ -3,13 +3,8 @@ import TV from '../../images/tv-base.png'
 
 export default function TVSet() {
     return (
-        <div className='TVSet'>
-            <img style={ tvImageStyle } src={TV} alt="MicTV TV set"></img>
+        <div className='TVSet col-sm-10 col-md-8 col-lg-6'>
+            <img src={TV} alt="MicTV TV set"></img>
         </div>
     )
-}
-
-const tvImageStyle = {
-    maxWidth: '600px',
-    height: 'auto'
 }
